@@ -1,116 +1,123 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Developer Gamer</title>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background: black;
-      color: white;
-      font-family: 'Courier New', monospace;
+[![Banner de Perfil](https://github.com/Davekibh/Davekibh/blob/main/Images/Banner%20Image.png)](https://github.com/Erick-Conde)
+
+<h2 align="center">¡Hola, soy Erick Conde! 👋</h2>
+
+🎓 Soy Desarrollador con experiencia en automatización 3D, desarrollo web backend y creación de apps móviles.  
+💡 Apasionado por la innovación, los retos y la tecnología.  
+🌐 Siempre aprendiendo y mejorando en cada proyecto.
+
+---
+
+<img align="right" src="https://media.giphy.com/media/dWesBcTLavkZuG35MI/giphy.gif" width="400" height="280" alt="Desarrollador animado"/>
+
+### 🚀 Mi enfoque actual
+
+- 🔭 Trabajando en proyectos 3D con automatización.
+- 📱 Desarrollo de apps móviles (React Native, Flutter).
+- 💻 Backend con Node.js, Laravel y APIs REST.
+- ⚙️ Explorando inteligencia artificial y automatización avanzada.
+- 🎨 Experimentos visuales con efectos RGB dinámicos y shaders.
+
+---
+
+<details>
+<summary><strong>🛠️ Tecnologías & Herramientas</strong></summary>
+<br/>
+
+<p>
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/html/html.png" height="20" alt="HTML"/>
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/css/css.png" height="20" alt="CSS"/>
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/javascript/javascript.png" height="20" alt="JavaScript"/>
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/react/react.png" height="20" alt="React"/>
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/nodejs/nodejs.png" height="20" alt="Node.js"/>
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/flutter/flutter.png" height="20" alt="Flutter"/>
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/firebase/firebase.png" height="20" alt="Firebase"/>
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/mongodb/mongodb.png" height="20" alt="MongoDB"/>
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/mysql/mysql.png" height="20" alt="MySQL"/>
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/threejs/threejs.png" height="20" alt="Three.js"/>
+</p>
+</details>
+
+---
+
+<details>
+<summary><strong>✨ Proyectos destacados</strong></summary>
+
+- [Generador de fondos con partículas RGB y lluvia binaria](https://github.com/Erick-Conde/background-matrix-rgb)
+- [Automatización 3D con controles físicos](https://github.com/Erick-Conde/robotica-3d)
+- [Plataforma de pedidos online con Telegram Bot](https://github.com/Erick-Conde/tienda-telegram)
+- [Sistema de control escolar](https://github.com/Erick-Conde/sistema-escolar)
+
+</details>
+
+---
+
+<details>
+<summary><strong>📊 Estadísticas de GitHub</strong></summary>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Erick-Conde&show_icons=true&theme=radical" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Erick-Conde&theme=radical&layout=compact" />
+</p>
+
+</details>
+
+---
+
+<details>
+<summary><strong>📬 Conecta conmigo</strong></summary>
+
+<p align="left">
+  <a href="https://t.me/erick_conde"><img src="https://web.telegram.org/img/logo_share.png" width="22" alt="Telegram"/></a>
+  <a href="https://github.com/Erick-Conde"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="22" alt="GitHub"/></a>
+  <a href="https://instagram.com/erickconde_dev"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" width="22" alt="Instagram"/></a>
+  <a href="https://linkedin.com/in/erick-conde"><img src="https://cdn3.iconfinder.com/data/icons/inficons/512/linkedin.png" width="22" alt="LinkedIn"/></a>
+</p>
+
+</details>
+
+---
+
+### 🎨 Fondo animado con binarios
+
+Para un fondo animado con "lluvia binaria" y efectos RGB, puedes añadir este archivo HTML en tu portafolio:
+
+```html
+<canvas id="matrix"></canvas>
+<script>
+  const canvas = document.getElementById("matrix");
+  const ctx = canvas.getContext("2d");
+
+  canvas.height = window.innerHeight;
+  canvas.width = window.innerWidth;
+
+  const binary = "01";
+  const columns = canvas.width / 20;
+  const drops = Array(Math.floor(columns)).fill(1);
+
+  function draw() {
+    ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    ctx.fillStyle = `rgb(${Math.random()*255},${Math.random()*255},${Math.random()*255})`;
+    ctx.font = "20px monospace";
+
+    for (let i = 0; i < drops.length; i++) {
+      const text = binary[Math.floor(Math.random() * binary.length)];
+      ctx.fillText(text, i * 20, drops[i] * 20);
+      drops[i] = (drops[i] * 20 > canvas.height || Math.random() > 0.95) ? 0 : drops[i] + 1;
     }
+  }
 
-    canvas {
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: -1;
-    }
-
-    .contenido {
-      position: relative;
-      z-index: 10;
-      text-align: center;
-      margin-top: 20vh;
-      animation: glow 5s infinite alternate;
-    }
-
-    h1 {
-      font-size: 3rem;
-      color: white;
-      text-shadow: 0 0 20px rgb(0,255,255);
-    }
-
-    p {
-      font-size: 1.5rem;
-      color: #00ffea;
-    }
-
-    button {
-      background: none;
-      border: 2px solid #00ffea;
-      padding: 10px 20px;
-      color: white;
-      font-size: 1.2rem;
-      margin-top: 20px;
-      cursor: pointer;
-      border-radius: 10px;
-      transition: 0.3s;
-      animation: glowBtn 4s infinite;
-    }
-
-    button:hover {
-      background-color: rgba(0, 255, 255, 0.2);
-    }
-
-    @keyframes glow {
-      0% {text-shadow: 0 0 10px red;}
-      50% {text-shadow: 0 0 20px lime;}
-      100% {text-shadow: 0 0 30px blue;}
-    }
-
-    @keyframes glowBtn {
-      0% {box-shadow: 0 0 10px red;}
-      50% {box-shadow: 0 0 20px lime;}
-      100% {box-shadow: 0 0 30px blue;}
-    }
-  </style>
-</head>
-<body>
-  <canvas id="lluviaBinaria"></canvas>
-
-  <div class="contenido">
-    <h1>¡Bienvenido, Desarrollador Gamer!</h1>
-    <p>Tu experiencia: Automatización 3D, Backend y Apps Móviles</p>
-    <button onclick="alert('¡Modo Dev Activado!')">Activar DevMode</button>
-  </div>
-
-  <script>
-    const canvas = document.getElementById("lluviaBinaria");
-    const ctx = canvas.getContext("2d");
-
-    canvas.height = window.innerHeight;
-    canvas.width = window.innerWidth;
-
-    const letras = "01";
-    const fontSize = 16;
-    const columns = canvas.width / fontSize;
-
-    const lluvia = Array(Math.floor(columns)).fill(1);
-
-    function dibujar() {
-      ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
-      ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-      ctx.fillStyle = `rgb(${Math.random()*255}, ${Math.random()*255}, ${Math.random()*255})`;
-      ctx.font = fontSize + "px monospace";
-
-      for (let i = 0; i < lluvia.length; i++) {
-        const texto = letras[Math.floor(Math.random() * letras.length)];
-        ctx.fillText(texto, i * fontSize, lluvia[i] * fontSize);
-
-        if (lluvia[i] * fontSize > canvas.height && Math.random() > 0.975) {
-          lluvia[i] = 0;
-        }
-
-        lluvia[i]++;
-      }
-    }
-
-    setInterval(dibujar, 50);
-  </script>
-</body>
-</html>
+  setInterval(draw, 50);
+</script>
+<style>
+  body {
+    margin: 0;
+    background: black;
+    overflow: hidden;
+  }
+  canvas {
+    display: block;
+  }
+</style>
