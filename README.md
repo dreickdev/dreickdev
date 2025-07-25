@@ -72,38 +72,5 @@ Soy un **ingeniero creativo** que une código, hardware y diseño para **crear e
 ### 🧬 Demo fondo RGB estilo Matrix
 
 ```html
-<canvas id="matrix"></canvas>
-<script>
-  const canvas = document.getElementById("matrix");
-  const ctx = canvas.getContext("2d");
-  canvas.height = window.innerHeight;
-  canvas.width = window.innerWidth;
+🎥 [Ver demo Matrix effect](https://tu-demo.github.io/)
 
-  const binary = "01";
-  const drops = Array(Math.floor(canvas.width / 20)).fill(1);
-
-  function draw() {
-    ctx.fillStyle = "rgba(0,0,0,0.05)";
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-    ctx.fillStyle = `hsl(${Math.random()*360},100%,70%)`;  // HSL color para efecto neón
-    ctx.font = "20px monospace";
-    for (let i = 0; i < drops.length; i++) {
-      const text = binary[Math.floor(Math.random() * 2)];
-      ctx.fillText(text, i * 20, drops[i] * 20);
-      drops[i] = drops[i] * 20 > canvas.height || Math.random() > 0.95 ? 0 : drops[i] + 1;
-    }
-  }
-
-  setInterval(draw, 50);
-</script>
-<style>
-  body {
-    margin: 0;
-    background: black;
-    overflow: hidden;
-    font-family: 'Orbitron', sans-serif;
-  }
-  canvas {
-    display: block;
-  }
-</style>
