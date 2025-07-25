@@ -12,28 +12,29 @@
 
 ### 👾 ¿Quién soy?
 
-Soy un **ingeniero creativo** que une código, hardware y diseño para **crear el futuro**.
+Soy un **técnico creativo e innovador** que une **impresiones 3D, electrónica y software** para dar vida a soluciones tecnológicas aplicadas.
 
-- 🧠 Automatización 3D + electrónica + software
-- 💡 Experiencias digitales únicas y funcionales
-- 🛠️ Del backend a lo físico, integrando IA y control real
+- 🧠 Diseño de placas electrónicas, controladores y automatización de procesos.
+- 🛠️ Desarrollo de sistemas físicos interactivos con Arduino, sensores y microcontroladores.
+- 📲 Desarrollo de mini apps móviles personalizadas para tareas específicas.
+- 🔁 Fuerte enfoque en **automatización 3D**, procesos eficientes y sostenibles.
 
 ---
 
 ### 🌌 Lo que estoy creando ahora
 
-- 🤖 Dispositivos físicos automatizados con Arduino/JS
+- 🤖 Dispositivos físicos automatizados (Arduino + JS)
 - 📱 Apps móviles híbridas (Flutter / React Native)
-- 🧬 Inteligencia artificial aplicada a procesos físicos
-- 🎨 RGB shaders + visuales interactivos
-- 🔌 Conectividad serial + bots + APIs inteligentes
+- 🧬 IA + control físico + microprocesadores
+- 🤖 Animatrónica prototípica para sistemas inteligentes
+- 🧃 Proyecto de reciclado PET1 para impresión 3D
 
 ---
 
 ### ⚙️ Mis herramientas de batalla
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=js,nodejs,react,flutter,html,css,laravel,mysql,firebase,mongodb,arduino,threejs" />
+  <img src="https://skillicons.dev/icons?i=js,nodejs,react,flutter,html,css,laravel,php,python,flask,django,mysql,firebase,mongodb,arduino,threejs" />
 </p>
 
 ---
@@ -66,11 +67,3 @@ Soy un **ingeniero creativo** que une código, hardware y diseño para **crear e
   <a href="https://instagram.com/erickconde_dev"><img src="https://img.shields.io/badge/Instagram-ff00ff?style=for-the-badge&logo=instagram&logoColor=white"/></a>
   <a href="https://linkedin.com/in/erick-conde"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
 </p>
-
----
-
-### 🧬 Demo fondo RGB estilo Matrix
-
-```html
-🎥 [Ver demo Matrix effect](https://tu-demo.github.io/)
-
